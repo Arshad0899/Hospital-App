@@ -1,0 +1,52 @@
+* {
+    /* background-color: #f5f2ea; */
+    background-color: #FFF;
+ 
+}
+
+.body {    
+    height: calc(100% - 75px);
+    width: calc(100vh - 200px);
+    width: 100%;
+    /* background-color: aqua; */
+
+    /* padding-bottom: 40px; */
+}
+
+.body-login {
+    height: 100vh;
+    width: 100%;
+}
+
+.login {
+    width: 100%;
+    max-height: calc(100vh - 75px);
+    border-bottom: none;
+    border-bottom-style: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: auto;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+}
+
+
+.footer {
+    margin-top: auto;
+}
+
+.app-side-nav {
+    width: 50px;
+    height: calc(100vh - 75px);
+    white-space: nowrap;
+    background-color: green;
+}
+
+.app-side-nav-open {
+    height: calc(100vh - 75px);
+    width: 200px;
+    white-space: nowrap;
+}

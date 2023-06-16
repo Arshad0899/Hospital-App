@@ -1,0 +1,23 @@
+<div class="info-dialog">
+    <p class="heading">{{data.dia_agenda}}</p>
+    <mat-divider></mat-divider>
+    <div class="info">
+        <div class="info-deails">
+            <p class="para-1"><b class="bold">Time : </b> {{ data.dia_time}}</p>
+            <p class="para-2"><b class="bold">Attendees : </b> {{ data.dia_attendees}}</p>
+        </div>
+        <div class="info-deails">
+            <p class="para-1"><b class="bold">Room No : </b> {{ data.dia_room_no}}</p>
+            <p class="para-2"><b class="bold">Duration : </b>  {{data.dia_duration}} mins</p>
+        </div>
+    </div>
+
+    <div class="action-btn">
+        <button mat-icon-button class="btn">
+            <img src="../../assets/logo/check.svg" />
+        </button>
+        <button mat-icon-button>
+            <img src="../../assets/logo/xmark.svg" />
+        </button>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+.info-dialog {
+    width: 630px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.info {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.action-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.btn {
+    margin-right: 15px;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.info-deails > * {
+    display: inline-flex;
+    padding-right: 25px;
+    padding-left: 30px;
+}
+
+.para-1 {
+    padding-left: 25px;
+}
+
+.para-2 {
+    padding-left: 70px;
+}

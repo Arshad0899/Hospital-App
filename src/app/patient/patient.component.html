@@ -1,0 +1,64 @@
+
+<p class="heading">Patients Details:</p>
+
+<table mat-table [dataSource]="dataSource" multiTemplateDataRows class="mat-elevation-z8">
+
+    <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay">
+        <th mat-header-cell *matHeaderCellDef class="table-header"> {{column}} </th>
+        <td mat-cell *matCellDef="let element"> {{element[column]}} </td>
+      
+        
+        
+      </ng-container>
+      
+      <ng-container matColumnDef="expand">
+        <th mat-header-cell *matHeaderCellDef aria-label="row actions">&nbsp;</th>
+        <td mat-cell *matCellDef="let element">
+          <button mat-icon-button aria-label="expand row" (click)="(expandedElement = expandedElement === element ? null : element); $event.stopPropagation()">
+            <mat-icon *ngIf="expandedElement !== element">keyboard_arrow_down</mat-icon>
+            <mat-icon *ngIf="expandedElement === element">keyboard_arrow_up</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+      
+  <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
+  <ng-container matColumnDef="expandedDetail" class="expandedDetail">
+    <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplayWithExpand.length">
+      <div class="example-element-detail"
+           [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
+        <div class="pull-down">
+            <img src="{{element.patient_img}}" class="patient_logo"/>
+          <span class="col">
+            <div class="col-one">
+                <div class=""><b class="bold">Mediacal History:</b> {{element.medical_history}} </div>
+                <div class=""><b class="bold">Current Condition:</b> {{element.current_medications}} </div>
+            </div>
+            <div class="col-two">
+                <div class=""><b class="bold">Medication:</b> {{element.test_results}}</div>
+                <div class=""><b class="bold">Result:</b> {{element.test_results}} </div>   
+            </div>
+            <div class="col-three">
+                <div class=""><b class="bold">Note:</b> {{element.description}}</div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </td>
+  </ng-container>
+  
+
+  <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpand"></tr>
+  <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpand;"
+      class="example-element-row"
+      [class.example-expanded-row]="expandedElement === element"
+      (click)="expandedElement = expandedElement === element ? null : element">
+  </tr>
+  
+  <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+    showFirstLastButtons
+    aria-label="Select page of periodic elements">
+  </mat-paginator>
+
+</table>

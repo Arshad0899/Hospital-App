@@ -1,0 +1,10 @@
+<div class="body">
+    
+    <ul class="nav-list" *ngFor="let item of list" (click) = "onClick(item.id)">
+        <img src="{{item.icon}}" class="icons-logo"/>
+        <span class="nav-list-item">
+            <p class="nav-text">{{item.name}}</p>
+        </span>
+    
+    </ul>
+</div>

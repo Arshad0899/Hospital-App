@@ -1,0 +1,26 @@
+<nav class="navigation-bar">
+    <div class="nav-menu"> 
+        <button mat-icon-button class="example-icon" (click) = "SideNavToggle()" aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <h1 class="nav-title">Medico</h1>        
+
+    <div class="nav-details">
+        <div class="nav-avatar">
+            <button mat-icon-button class="btn-img" (click)="showMenu()">
+                <img src="../../assets/logo/doctor.png"  class="doctor-avatar"/>
+            </button>
+            
+            <div class="nav-para">
+                <p class="username">{{username}}</p>
+                <p class="role">{{role}}</p>   
+            </div>
+        </div>
+    
+    </div>
+
+    <app-menu class="menu-bar" *ngIf=toggleMenu></app-menu>
+
+  </nav>
+  

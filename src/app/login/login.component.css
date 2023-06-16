@@ -1,0 +1,230 @@
+.body {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+    background-color: #f5f2ea;
+    height: calc(100vh - 60.67px);
+}
+
+.main {
+    display: flex;
+    /* align-items: center; */
+    /* background-color: #F3F5F9; */
+    width: 50%;
+    padding-top: 5px;
+    height: auto;
+}
+
+.navigation-bar {
+    height: 55px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-left: 15px;
+    border-bottom: 1px solid #fdc886;
+    padding-right: 10px;
+    background-color: #eedcc6;
+}
+
+.nav-buttons {
+    padding-top: 7px;
+}
+
+.nav-title {
+    font-size: 35px;
+    display: flex;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    color: rgb(13, 6, 13);
+    align-items: end;
+}
+
+.signup {
+    background-color: #845112;
+    margin-right: 10px;
+    color: #845112;
+}
+
+.example-card {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-content: center; */
+    min-width: 65%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    /* padding-bottom: 5px;
+    border-bottom: 1px solid #CCC; */
+}
+
+.error {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.trouble {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.logo-text {
+    font-size: 22px;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    font-weight: 600;
+    /* padding-left: 10px; */
+    margin-top: 0px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.example-form {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 90%;
+}
+
+.but-img {
+    width: 15px; 
+    height: 15px;
+    /* padding-top: 6px; */
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn > * {
+    display: inline;
+}
+
+.div-btn {
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+
+.para {
+    padding-right: 5px;
+    padding-top: 21px;
+    padding-left: 5px;
+    text-align: center;
+}
+
+.para-apple {
+    padding-top: 18px;
+    padding-bottom: 4px;
+    padding-left: 3px;
+}
+
+.para-apple {
+    padding-top: 7px ;
+}
+
+.but-img-apple {
+    width: 20px; 
+    height: 20px;
+    /* padding-top: 6px; */
+}
+
+.example-full-width {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .example-form {
+    width: 380px;
+    /* max-width: 500px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0px;
+    /* width: 100%; */
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+
+.button-style {
+    width: 100%;
+    /* color: #fefcf7; */
+    color: black;
+    background-color: #fdc886;
+}
+
+.button-style[_ngcontent-wie-c91] {
+    width: 100%;
+}
+
+.div-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+} 
+
+.icons {
+    display: flex;
+    gap: 5px;
+}
+
+.para {
+    display: inline;
+    padding-left: 5px;
+    padding-bottom: 20px;
+}
+
+
+.paragraph {
+    display: inline;
+    padding-left: 6px;
+    padding-top: 0px;
+    color: rgba(12, 12, 12, 0.902);
+}
+
+.request {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+}
+
+.link {
+    font-weight: 500;
+    border-top: 15px;
+    padding-top: 14px;
+}
+
+.link:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.image-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

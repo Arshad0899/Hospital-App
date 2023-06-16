@@ -1,0 +1,104 @@
+.footer-main {
+    display: flex;
+    flex-direction: row;
+    /* flex-flow: 1 2 1 1; */
+    width: auto;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    color: azure;
+    /* padding-top: 15px; */
+    padding-bottom: 20px;
+}
+
+.footer-main > * {
+    flex: 1;
+
+    padding-top: 18px;
+}
+
+.footer-address > p {
+    font-size: 18px;
+}
+
+.footer-heading {
+    padding-left: 25px;
+}
+
+.footer-heading > h1 {
+    font-size: 45px;
+    color: rgb(184, 233, 141);
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+.footer-heading > p {
+    font-size: 13px;
+    line-height: 10px;
+}
+
+.footer-address > .arrow {
+    text-decoration: none;
+    display: inline;
+    font-size: 14px;
+}
+
+.footer-address > address {
+    color: aliceblue;
+}
+
+.footer-address > a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-address > address > a {
+    text-decoration: underline;
+}
+
+.footer-address > address > a:hover {
+    cursor: pointer;
+}
+
+.footer-tail {
+    /* border: 1px solid red; */
+    /* margin-right: 30px; */
+    /* padding-right: 20px; */
+    padding-top: 0px;
+    padding-left: 20px;
+}
+
+.footer-tail > p {
+    width: 70%;
+    padding-bottom: 15px;
+}
+
+.footer-tail > .newsletter {
+    text-decoration: underline;
+    display: inline;
+}
+
+.footer-tail > .arrow {
+    display: inline;
+}
+
+.footer-tail > .newsletter:hover {
+    cursor: pointer;
+}
+
+.footer-tail > .follow {
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+.footer-tail > .logos {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-tail > .logos > img:hover {
+    cursor: pointer;
+}
+
+.footer-tail > .rate:hover {
+    cursor: pointer;
+}

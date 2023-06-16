@@ -1,0 +1,156 @@
+.mat-elevation-z8 {
+    width: 100%;
+    box-shadow: none;
+    /* overflow: auto; */
+    /* max-height: calc(100vh - 75px); */
+    /* height: 100px; */
+    max-width: calc(100% -  35px);
+    padding-left: 15px;
+    padding-right: 15px;
+    /* padding-top: 10px; */
+    /* background-color: #bb2525; */
+}
+
+.mat-mdc-table {
+    height: calc(100% - 75px);
+    /* width: %; */
+}
+
+th {
+  font-weight: 450;
+  font-size: 16px;
+}
+
+.table-header {
+  position: sticky;
+  opacity: 1;
+  z-index: 1;
+  overflow: hidden;
+  top: 52px;
+  /* background-color: aqua !important; */
+  /* padding-right: 120px; */
+} 
+
+.mdc-data-table__header-cell {
+  background-color: #fff;
+  position: sticky;
+  z-index: 1;
+  opacity: 1;
+  z-index: 1;
+  overflow: hidden;
+  top: 52px;
+}
+
+.heading {
+  position: sticky;
+  padding-left: 28px;
+  top: 0px;
+  opacity: 1;
+  padding-top: 20px;
+  background-color: #fff; /* Set a suitable background color */
+  font-weight: 500;
+  margin: 0px;
+  /* padding-top: 15px; */
+  padding-bottom: 12px;
+  font-size: 20px;
+  z-index: 1;
+}
+
+/* th {
+  font-weight: 600;
+  position: sticky;
+  /* margin-top: 10px;
+} */
+
+/* table {
+  width: 100%;
+} */
+
+tr.example-detail-row {
+  height: 0;
+}
+
+tr.example-element-row:not(.example-expanded-row):hover {
+  background: whitesmoke;
+}
+
+tr.example-element-row:not(.example-expanded-row):active {
+  background: #efefef;
+}
+
+.example-element-row td {
+  border-bottom-width: 0;
+}
+
+.example-element-detail {
+  overflow: hidden;
+  display: flex;
+}
+.example-element-diagram {
+  min-width: 80px;
+  border: 2px solid black;
+  padding: 8px;
+  font-weight: lighter;
+  margin: 8px 0;
+  height: 104px;
+}
+
+.example-element-symbol {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: normal;
+}
+
+.example-element-description {
+  padding: 16px;
+}
+
+.col {
+  padding-left: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+}
+
+.col-three {
+  width: 270px;
+  line-height: 25px;
+  padding-left: 30px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.col-one, .col-two {
+  line-height: 25px;
+  padding-left: 20px;
+}
+
+.example-element-description-attribution {
+  opacity: 0.5;
+}
+
+.bold {
+  font-weight: 430;
+}
+
+.pull-down {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 16px;
+  padding-left: 20px;
+}
+
+.patient_logo {
+  width: 30px;
+  height: 30px;
+  /* background: greenyellow; */
+  margin: 5px;
+  margin-right: 5px;
+  display: flex;
+  background-color: rgb(245 242 234);
+  padding: 12px;
+  border-radius: 50%;
+}

@@ -1,0 +1,90 @@
+<nav class="navigation-bar">
+    <p class="nav-title">Medico</p>
+      <!-- <h1 class="nav-title">Medico</h1> -->
+      <div class="nav-buttons">
+        <button mat-button>contact us</button>
+        <button mat-flat-button class="signup" style="background-color: #fdc886;" (click)="onSingUp()">Sign Up</button>
+      </div>
+    </nav>
+    
+    <div class="body">
+    
+      <div class="main">
+      
+        <mat-card class="example-card">
+          <mat-card-header class="heading">
+            <mat-card-title-group>
+              <p class="logo-text">Doctors Login</p>
+            </mat-card-title-group>
+          </mat-card-header>
+        
+          <!-- {{users[0].name}} -->
+        
+          <mat-card-content class="card-content">
+            <form class="example-form" [formGroup] = "loginForm">
+            <mat-form-field class="example-full-width" appearance="outline">
+              <mat-label>Email</mat-label>
+              <input matInput class="input" formControlName="email" >
+              <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                Please enter a valid email address
+              </mat-error>
+              <mat-error *ngIf="emailFormControl.hasError('required')" class="error">
+                Email is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+        
+            <mat-form-field class="example-full-width" appearance="outline">
+              <mat-label>Password</mat-label>
+              <input class="input" matInput type="password" formControlName="password" appearance="outline" >
+              <mat-error *ngIf="emailFormControl.hasError('required')">
+                Password is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+      
+            <p class="trouble link">Having trouble in sign in?</p>
+            
+            <div class="div-button">
+              <button mat-raised-button class="button-style" style="background-color: #fdc886;" type="submit" (click)="OnSubmit()">Log In</button>
+            </div>
+        
+          </form>
+      
+          <p>— Or Sign in with —</p>
+      
+          <div class="icons">
+            <button mat-raised-button class="btn">
+              <div class="div-btn">
+                <img src="../../assets/logo/google.svg" class="but-img"/>
+                <span class="para">Google</span>
+              </div>
+            </button>
+            <button mat-raised-button class="btn">
+              <div class="div-btn">
+                <img src="../../assets/logo/apple.svg" class="but-img-apple"/>
+                <span class="para-apple">Apple ID</span>
+              </div>
+            </button>
+            <button mat-raised-button class="btn">
+              <div class="div-btn">
+                <img src="../../assets/logo/facebook.svg" class="but-img"/>
+                <span class="para">Facebook</span>
+              </div>
+            </button>
+          </div>
+      
+          <div class="request">
+            <p class="paragraph">Don't have an account?<a class="link"> Request now</a></p>
+            <!-- <a class="paragraph">Request now</a> -->
+          </div>
+  
+        </mat-card-content>
+        
+        </mat-card>
+      
+      </div>  
+      
+      <div class="image-body">
+        <img src="../../assets/doctors-2.svg" width="550px" height="450px"/>
+      </div>
+    
+    </div>

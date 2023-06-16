@@ -1,0 +1,112 @@
+<P class="heading">Appointment</P>
+<!-- {{users[0].name}} -->
+<mat-card-content class="card-content">
+
+    <form class="example-form">
+        <p class="info">Personal Info</p>
+        <div class="row-1">
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>First Name</mat-label>
+                <input matInput type="text">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input matInput type="text">
+            </mat-form-field>
+        </div>
+        
+        <div class="row-1">
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Gardian Name</mat-label>
+                <input matInput type="text">
+            </mat-form-field>
+    
+              <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Gender</mat-label>
+                <mat-select>
+                  <mat-option value="male">Male</mat-option>
+                  <mat-option value="female">Female</mat-option>
+                </mat-select>
+              </mat-form-field>
+        </div>
+
+
+        <div class="row-1">
+
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Address</mat-label>
+                <input matInput type="text">
+                <mat-icon matSuffix><img src="../../assets/logo/location.svg" class="location"/></mat-icon>
+            </mat-form-field>
+    
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Patient's Age</mat-label>
+                <input matInput type="number">
+            </mat-form-field>
+
+        </div>
+
+        <div class="row-1">
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Telephone</mat-label>
+                <span matPrefix class="matPrefix">+91 &nbsp;</span>
+                <input type="tel" matInput>
+                <mat-icon matSuffix>phone</mat-icon>
+            </mat-form-field>
+    
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput type="email">
+                <mat-icon matSuffix><img src="../../assets/logo/envelope.svg" /></mat-icon>
+            </mat-form-field>
+
+        </div>
+
+        <br>
+        <p class="info">Appointment Details</p>
+
+        <div class="row-1">
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Medical History</mat-label>
+                <input matInput type="text">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Family Medical History</mat-label>
+                <input matInput type="text">
+            </mat-form-field>
+        </div>
+        
+        <div class="row-1 row-2">
+
+              <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Appoinment Date</mat-label>
+                <input matInput [matDatepickerFilter]="appointment_date" [matDatepicker]="picker">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+    
+              <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Appointment Time</mat-label>
+                <input matInput type="time">
+                <mat-icon matSuffix><img src="../../assets/logo/clock.svg" /></mat-icon>
+              </mat-form-field>
+        </div>
+
+        <div class="row-1">
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Symptoms</mat-label>
+                <input matInput type="text">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Current Dosage</mat-label>
+                <input matInput type="text">
+            </mat-form-field>
+        </div>
+
+        <div class="div-btn">
+            <button mat-raised-button class="button-style" style="background-color: #fdc886;" type="submit">Submit</button>
+          </div>
+
+    </form>
+</mat-card-content>
